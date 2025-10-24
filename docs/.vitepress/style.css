@@ -1,55 +1,84 @@
-/* 全局全屏背景 */
-:root {
-  /* 确保页面没有默认内外边距 */
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
-}
-
-/* 全屏背景图 - 覆盖整个页面 */
+/* 1. 全局全屏背景（保持充满网页） */
 body {
-  /* 替换为你的背景图路径（放在 public/images 目录下） */
-  background-image: url('https://pic.nwafu.xyz/images/639785b2839929c519e8fbfd0ad1554ac4242cc107d8b4876f3006f73ee15ace/1761288116445-tf53erp2-img_mh4hgqd1_nl04rt.png');
-  /* 背景图覆盖整个视口 */
-  background-size: cover;
-  /* 背景图居中显示 */
-  background-position: center center;
-  /* 背景图固定，不随滚动移动 */
-  background-attachment: fixed;
-  /* 避免背景图重复平铺 */
-  background-repeat: no-repeat;
-  /* 确保 body 占满整个屏幕高度 */
-  min-height: 100vh;
-  /* 移除默认 margin，避免边缘白边 */
+  background-image: url('https://pic.nwafu.xyz/images/639785b2839929c519e8fbfd0ad1554ac4242cc107d8b4876f3006f73ee15ace/1761288116445-tf53erp2-img_mh4hgqd1_nl04rt.png'); /* 全屏背景图路径 */
+  background-size: cover; /* 背景充满视口 */
+  background-position: center center; /* 背景居中 */
+  background-attachment: fixed; /* 背景固定，不随滚动移动 */
+  background-repeat: no-repeat; /* 背景不重复 */
+  min-height: 100vh; /* 确保body占满屏幕高度 */
   margin: 0;
   padding: 0;
 }
 
-/* 主内容区域添加半透明遮罩（可选，增强文字可读性） */
-.yui-community, .VPContent {
-  /* 黑色半透明遮罩，可根据背景图调整透明度 */
-  background-color: rgba(10, 10, 22, 0.7);
-  /* 确保内容区域覆盖整个页面 */
+/* 内容容器半透明遮罩（保障文字可读性，不影响背景） */
+.yui-community {
+  background-color: rgba(10, 10, 22, 0.7); /* 黑色半透明遮罩 */
   min-height: 100vh;
   width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
-/* 导航栏样式调整（确保在背景之上） */
+/* 2. 导航栏样式（在背景之上，不遮挡） */
 .VPNav {
-  /* 提高导航栏层级，避免被背景遮挡 */
   position: relative;
   z-index: 100;
-  /* 半透明背景增强层次感 */
-  background: rgba(10, 10, 22, 0.8) !important;
+  background: rgba(10, 10, 22, 0.8) !important; /* 半透明背景增强层级 */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* 主视觉区域样式（与全屏背景融合） */
+/* 3. 主视觉区域布局（适配全屏背景，不额外加背景） */
 .hero-section {
-  /* 取消原有背景，使用全局背景 */
-  background: none !important;
-  /* 确保高度适应剩余空间 */
-  min-height: calc(100vh - 60px); /* 减去导航栏高度 */
+  background: none !important; /* 取消区域自身背景，用全局背景 */
+  min-height: calc(100vh - 60px); /* 减去导航栏高度，占满剩余屏幕 */
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 2rem;
+  gap: 3rem; /* 角色图与展示图区域间距 */
+}
+
+/* 4. 角色图片容器（自适应图片大小） */
+.character-display {
+  width: auto; /* 容器宽度由图片决定 */
+  height: auto; /* 容器高度由图片决定 */
+  max-width: 300px; /* 可选：限制最大宽度，避免图片过大 */
+}
+
+.character-img {
+  width: 100%; /* 图片宽度跟随容器（即图片原始宽度，受max-width限制） */
+  height: auto; /* 图片高度按原始比例自适应，不拉伸 */
+  object-fit: contain; /* 确保图片完整显示，无裁剪 */
+  border-radius: 8px; /* 可选：图片圆角，增强美观 */
+}
+
+/* 5. 活动展示图片容器（自适应图片大小） */
+.image-showcase {
+  display: flex; /* 水平排列图片容器 */
+  gap: 1.5rem; /* 图片容器之间间距 */
+  flex-wrap: wrap; /* 小屏幕自动换行，避免横向滚动 */
+  justify-content: center;
+  align-items: center;
+}
+
+.image-card {
+  width: auto; /* 容器宽度由图片决定 */
+  height: auto; /* 容器高度由图片决定 */
+  max-width: 250px; /* 可选：限制最大宽度，统一布局 */
+  border-radius: 8px;
+  overflow: hidden; /* 裁剪图片超出容器的部分（配合圆角） */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.showcase-img {
+  width: 100%; /* 图片宽度跟随容器 */
+  height: auto; /* 图片高度按原始比例自适应 */
+  object-fit: contain; /* 完整显示图片，不拉伸、不裁剪 */
+  display: block; /* 消除图片底部默认空隙 */
+}
+
+/* 图片容器悬停效果（保留交互感） */
+.image-card:hover {
+  transform: translateY(-5px); /* 上移效果，不影响尺寸 */
 }
