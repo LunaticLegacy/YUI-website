@@ -59,6 +59,7 @@
   font-weight: 700;
   background: -webkit-linear-gradient(120deg, #ff7bac, #a26bf7);
   -webkit-background-clip: text;
+  background-clip: text; /* 添加标准属性 */
   -webkit-text-fill-color: transparent;
 }
 

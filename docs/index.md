@@ -1,73 +1,93 @@
 ---
-layout: home
-
-hero:
-  name: YUI动漫社
-  text: 西北农林科技大学
-  tagline: 以热爱为名，共赴二次元之约
-  image:
-    src: http://pic.nwafu.xyz/images/0000000000000000000000003b8a09ad0000000000000000000000003b8a09ad/1760937426486-bi77cilb-img_mgyoodto_fne3bt.png
-    alt: YUI动漫社Logo
-  actions:
-    - theme: brand
-      text: 查看社团活动
-      link: /markdown-examples
-    - theme: alt
-      text: 加入我们
-      link: /api-examples
-
-features:
-  - icon: 🎭
-    title: 宅舞表演
-    details: 精彩绝伦的宅舞演出，让你感受二次元的魅力与活力。
-  - icon: 🎵
-    title: 动漫音乐
-    details: 经典动漫歌曲演唱与演奏，带你重温那些年追过的番剧。
-  - icon: 📸
-    title: 摄影展示
-    details: 社团活动精彩瞬间记录，留住每一个美好回忆。
-  - icon: 👥
-    title: 社交聚会
-    details: 定期举办社团聚会，结识更多志同道合的朋友。
-  - icon: 🎨
-    title: 创意手工
-    details: 动漫周边制作与交换，发挥你的创意与想象力。
-  - icon: 🎤
-    title: 声优表演
-    details: 经典角色配音表演，体验成为声优的乐趣。
+title: YUI动漫社
 ---
 
-<style>
-:root {
-  --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #ff7bac, #a26bf7);
-  --vp-home-hero-image-background-image: linear-gradient(-45deg, #ff7bac 50%, #a26bf7 50%);
-  --vp-home-hero-image-filter: blur(40px);
-}
+<div class="yui-community">
+  <!-- 导航栏 -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="/logo.png" alt="YUI动漫社" class="logo-img">
+    </div>
+    
+    <nav class="main-nav">
+      <!-- 主导航 -->
+      <div class="nav-section">
+        <a href="/" class="nav-link">首页</a>
+        <a href="/about" class="nav-link">社团介绍</a>
+        <a href="/important" class="nav-link">活动情报</a>
+        <a href="/history" class="nav-link">编年史</a>
+      </div>
+      
+      <!-- 组成分组 -->
+      <div class="nav-group">
+        <span class="nav-group-title">组成</span>
+        <div class="nav-items">
+          <a href="/guangbang" class="nav-item">应援组</a>
+          <a href="/wudao" class="nav-item">宅舞组</a>
+          <a href="/cosplay" class="nav-item">cos组</a>
+          <a href="/jishu" class="nav-item">技术组</a>
+          <a href="/mazi" class="nav-item">码字组</a>
+          <a href="/meigong" class="nav-item">美工组</a>
+          <a href="/cv" class="nav-item">音声组</a>
+        </div>
+      </div>
+      
+      <!-- 英灵殿分组 -->
+      <div class="nav-group">
+        <span class="nav-group-title">英灵殿</span>
+        <div class="nav-items">
+          <a href="/leader" class="nav-item">社长</a>
+          <a href="/paint" class="nav-item">摄影</a>
+          <a href="/guangbang" class="nav-item">应援</a>
+          <a href="/wudao" class="nav-item">宅舞</a>
+          <a href="/cos" class="nav-item">cos</a>
+          <a href="/jishu" class="nav-item">技术</a>
+          <a href="/mazi" class="nav-item">码字</a>
+          <a href="/meigong" class="nav-item">美工</a>
+          <a href="/cv" class="nav-item">音声</a>
+        </div>
+      </div>
+      
+      <!-- 社刊分组 -->
+      <div class="nav-group">
+        <span class="nav-group-title">社刊</span>
+        <div class="nav-items">
+          <a href="/shekan/latest" class="nav-item">最新社刊</a>
+          <a href="/shekan/archive" class="nav-item">往期社刊</a>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="user-area">
+      <button class="login-btn">登录</button>
+    </div>
+  </header>
 
-@media (min-width: 640px) {
-  :root {
-    --vp-home-hero-image-filter: blur(56px);
-  }
-}
+  <!-- 主视觉区域 -->
+  <section class="hero-section">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <!-- 角色展示 -->
+      <div class="character-display">
+        <img src="https://pic.nwafu.xyz/images/639785b2839929c519e8fbfd0ad1554ac4242cc107d8b4876f3006f73ee15ace/1761314746858-ozwyk0dc-img_mh4xbkn8_ubnt4q.png" 
+             alt="社团形象角色" class="character-img">
+      </div>
+      
+      <!-- 三个图片容器 -->
+      <div class="image-showcase">
+        <div class="image-card">
+          <img src="https://pic.nwafu.xyz/images/639785b2839929c519e8fbfd0ad1554ac4242cc107d8b4876f3006f73ee15ace/1761301445019-a586l1o6-img_mh4pelfn_kj5fd5.jpg" alt="官方qq群" class="showcase-img">
+        </div>
+        <div class="image-card">
+          <img src="https://pic.nwafu.xyz/images/639785b2839929c519e8fbfd0ad1554ac4242cc107d8b4876f3006f73ee15ace/1761301462123-2m780dkg-img_mh4peyqh_s96r8t.jpg" alt="官方B站账号" class="showcase-img">
+        </div>
+        <div class="image-card">
+          <img src="https://pic.nwafu.xyz/images/639785b2839929c519e8fbfd0ad1554ac4242cc107d8b4876f3006f73ee15ace/1761301476772-ztijvwdf-img_mh4pfa1f_cblgb8.jpg" alt="官方社娘qq号" class="showcase-img">
+        </div>
+      </div>
+    </div>
+  </section>
 
-@media (min-width: 960px) {
-  :root {
-    --vp-home-hero-image-filter: blur(72px);
-  }
-}
-
-.VPHomeFeatures .item {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border-radius: 12px;
-}
-
-.VPHomeFeatures .item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 24px rgba(162, 107, 247, 0.2);
-}
-
-.dark .VPHomeFeatures .item:hover {
-  box-shadow: 0 12px 24px rgba(162, 107, 247, 0.4);
-}
-</style>
+    <div class="copyright">© 2025 YUI动漫社 版权所有</div>
+  </footer>
+</div>

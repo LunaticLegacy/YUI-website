@@ -1,53 +1,16 @@
 import { defineConfig } from 'vitepress'
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
+  title: 'YUI动漫社',
+  description: 'YUI动漫社官方网站',
   base: '/',
-  title: "YUI动漫社",
-  description: "西北农林科技大学YUI动漫社官方网站",
-  head: [
-    ['link', { rel: 'icon', href: '/logo.png' }],
-    ['link', { rel: 'stylesheet', href: '/style.css' }]
-  ],
+  // 移除publicDir配置（VitePress默认使用docs/public）
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      { text: '主页', link: '/' },
-      { text: '活动展示', link: '/markdown-examples' },
-      { text: '关于我们', link: '/api-examples' }
-    ],
-
-    sidebar: [
-      {
-        text: '社团介绍',
-        items: [
-          { text: '社团历史', link: '/markdown-examples' },
-          { text: '成员介绍', link: '/api-examples' }
-        ]
-      }
-    ],
-
+    logo: '/logo.png', // 对应docs/public/logo.png
+    nav: [], // 自定义导航
+    sidebar: undefined, // 关闭默认侧边栏
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/JunketPear/YUI-website/' }
-    ],
-
-    footer: {
-      message: '西北农林科技大学YUI动漫社',
-      copyright: 'Copyright © 2025 YUI动漫社'
-    },
-
-    outlineTitle: '页面导航',
-    lastUpdatedText: '最后更新',
-    docFooter: {
-      prev: '上一页',
-      next: '下一页'
-    }
-  },
-
-  locales: {
-    root: {
-      label: '简体中文',
-      lang: 'zh-CN'
-    }
+      { icon: 'YUI动漫社', link: 'https://pic.nwafu.xyz/images/639785b2839929c519e8fbfd0ad1554ac4242cc107d8b4876f3006f73ee15ace/1761233540764-nr0cx4dz-img_mh3kz15p_6904we.png' }
+    ]
   }
 })
