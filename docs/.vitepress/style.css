@@ -1,29 +1,48 @@
-/* 仅保留必要样式，避免冲突 */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* 彻底清除默认背景 */
+.VPApp, .VPContent, .VPHome, .VPDoc {
+  background: transparent !important;
 }
 
-/* 导航栏样式 */
+/* 导航栏保持可见，不遮挡背景 */
 .VPNav {
-  background: rgba(10, 10, 22, 0.8) !important;
-  z-index: 100 !important;
+  background: rgba(0, 0, 0, 0.5) !important; /* 半透明黑色导航栏 */
 }
 
-.VPNavItem a {
-  color: #e0e0e0 !important;
+/* 图片容器样式 */
+.character-display {
+  margin: 2rem 0;
+  text-align: center;
 }
 
-.VPNavItem a:hover {
-  color: #61dafb !important;
+.character-img {
+  width: 300px; /* 角色图固定宽度 */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
-/* 图片悬停效果 */
+.image-showcase {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
 .image-card {
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
 }
 
 .image-card:hover {
   transform: translateY(-5px);
+}
+
+.showcase-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
