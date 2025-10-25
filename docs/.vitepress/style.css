@@ -21,3 +21,7 @@
 .image-card:hover {
   transform: translateY(-5px) !important;
 }
+/* 角色图悬浮效果（迁移自内嵌<style>） */
+.character-display:hover {
+  transform: translateY(-10px) !important;
+}
