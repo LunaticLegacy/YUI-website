@@ -1,60 +1,41 @@
-/* 全局样式 */
+/* 全局样式重置，确保背景图优先级最高 */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html, body {
-  min-height: 100vh;
-  background: transparent !important;
-}
-
-/* 导航栏样式 */
-.VPNav {
-  background: rgba(0, 0, 0, 0.5) !important;
-  z-index: 100 !important;
-}
-
-/* 根容器背景 */
-.yui-community {
-  background-image: url('https://pic.nwafu.xyz/images/639785b2839929c519e8fbfd0ad1554ac4242cc107d8b4876f3006f73ee15ace/1761288116445-tf53erp2-img_mh4hgqd1_nl04rt.png');
+/* 强制覆盖VitePress默认背景，全屏显示 */
+body, .VPApp, .VPContent, .VPHome, .VPDoc {
+  background-image: url('https://pic.nwafu.xyz/images/639785b2839929c519e8fbfd0ad1554ac4242cc107d8b4876f3006f73ee15ace/1761314728097-qoiiped0-img_mh4xb9vr_5ax1rm.png') !important;
   background-size: cover !important;
   background-position: center !important;
   background-attachment: fixed !important;
   background-repeat: no-repeat !important;
   min-height: 100vh !important;
-  position: relative;
-  padding: 2rem;
 }
 
-/* 半透明遮罩 */
-.mask {
-  position: absolute;
-  top: 0;
-  left: 0;
+/* 半透明遮罩（增强内容可读性，可选） */
+.yui-community {
+  background-color: rgba(10, 10, 22, 0.3) !important;
+  min-height: 100vh;
   width: 100%;
-  height: 100%;
-  background-color: rgba(10, 10, 22, 0.3);
-  z-index: 1;
 }
 
-/* 主内容区域 */
-.main-content {
-  position: relative;
-  z-index: 2;
-  max-width: 1200px;
-  margin: 0 auto;
+/* 导航栏样式（确保可见） */
+.VPNav {
+  background: rgba(0, 0, 0, 0.5) !important;
+  z-index: 100 !important;
 }
 
-/* 角色图样式（左侧悬浮效果） */
+/* 角色图悬浮效果 */
 .character-display {
   float: left;
   width: 40%;
   min-width: 300px;
   padding: 2rem;
   transform: translateY(0);
-  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
 .character-img {
@@ -66,23 +47,12 @@ html, body {
   transition: box-shadow 0.5s ease;
 }
 
-/* 角色图悬浮效果 */
 .character-display:hover {
   transform: translateY(-10px);
 }
 
 .character-display:hover .character-img {
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
-}
-
-/* 右侧留白 */
-.right-blank {
-  float: right;
-  width: 60%;
-}
-
-.clearfix {
-  clear: both;
 }
 
 /* 图片展示区域 */
@@ -113,4 +83,14 @@ html, body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* 右侧留白与清除浮动 */
+.right-blank {
+  float: right;
+  width: 60%;
+}
+
+.clearfix {
+  clear: both;
 }
