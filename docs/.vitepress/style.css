@@ -1,28 +1,116 @@
-/* 确保导航栏半透明，不遮挡背景 */
-.VPNav {
-  background: rgba(0, 0, 0, 0.5) !important;
-  position: relative;
-  z-index: 10; /* 导航栏在最上层 */
+/* 全局样式 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* 图片卡片悬停效果 */
+html, body {
+  min-height: 100vh;
+  background: transparent !important;
+}
+
+/* 导航栏样式 */
+.VPNav {
+  background: rgba(0, 0, 0, 0.5) !important;
+  z-index: 100 !important;
+}
+
+/* 根容器背景 */
+.yui-community {
+  background-image: url('https://pic.nwafu.xyz/images/639785b2839929c519e8fbfd0ad1554ac4242cc107d8b4876f3006f73ee15ace/1761288116445-tf53erp2-img_mh4hgqd1_nl04rt.png');
+  background-size: cover !important;
+  background-position: center !important;
+  background-attachment: fixed !important;
+  background-repeat: no-repeat !important;
+  min-height: 100vh !important;
+  position: relative;
+  padding: 2rem;
+}
+
+/* 半透明遮罩 */
+.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 10, 22, 0.3);
+  z-index: 1;
+}
+
+/* 主内容区域 */
+.main-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 角色图样式（左侧悬浮效果） */
+.character-display {
+  float: left;
+  width: 40%;
+  min-width: 300px;
+  padding: 2rem;
+  transform: translateY(0);
+  transition: transform 0.5s ease;
+}
+
+.character-img {
+  width: 100%;
+  height: auto;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.5s ease;
+}
+
+/* 角色图悬浮效果 */
+.character-display:hover {
+  transform: translateY(-10px);
+}
+
+.character-display:hover .character-img {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* 右侧留白 */
+.right-blank {
+  float: right;
+  width: 60%;
+}
+
+.clearfix {
+  clear: both;
+}
+
+/* 图片展示区域 */
+.image-showcase {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.image-card {
+  width: 30%;
+  min-width: 200px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
 .image-card:hover {
   transform: translateY(-5px);
 }
 
-/* 响应式调整：小屏幕下角色图居中，图片纵向排列 */
-@media (max-width: 768px) {
-  .character-container {
-    float: none;
-    width: 100%;
-    padding: 1rem;
-  }
-  
-  .image-showcase {
-    flex-direction: column;
-  }
-  
-  .image-card {
-    width: 80% !important;
-  }
+.showcase-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
