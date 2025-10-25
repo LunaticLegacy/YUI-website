@@ -130,3 +130,26 @@
 .image-card:hover {
   transform: translateY(-5px) !important;
 }
+/* 强制修改导航栏所有文字大小 */
+:root .VPNav .logo span {
+  font-size: 48px !important; /* YUI动漫社 放大2倍 */
+  color: #fff !important;
+}
+
+:root .VPNav .nav-menu .VPNavItem a,
+:root .VPNav .nav-menu .VPNavItem span {
+  font-size: 32px !important; /* 首页等一级菜单 放大2倍 */
+  color: #fff !important;
+}
+
+:root .VPNavDropdown .dropdown-menu .VPNavItem a,
+:root .VPNavDropdown .dropdown-menu .VPNavItem span {
+  font-size: 28px !important; /* 下拉菜单 放大2倍 */
+  color: #fff !important;
+}
+
+/* 导航栏高度适配 */
+:root .VPNav {
+  height: 140px !important;
+  background: rgba(0,0,0,0.6) !important;
+}
