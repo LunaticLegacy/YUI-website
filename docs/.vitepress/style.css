@@ -5,7 +5,7 @@
   box-sizing: border-box !important;
 }
 
-/* 强制VitePress核心组件透明，确保背景图全屏 */
+/* 强制VitePress核心组件透明 */
 .VPApp, .VPContent, .VPDoc, .VPHome, .VPLayout {
   background: transparent !important;
   border: none !important;
@@ -14,7 +14,7 @@
 /* 导航栏样式 */
 .VPNav {
   background: rgba(0, 0, 0, 0.5) !important;
-  z-index: 100 !important;
+  z-index: 100 !important; /* 确保导航栏在最上层 */
 }
 
 /* 角色图悬浮效果 */
