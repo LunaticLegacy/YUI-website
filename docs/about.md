@@ -136,7 +136,7 @@ title: 社团介绍 | YUI动漫社
   .character-desc {
     max-width: 1600px; /* 描述容器放大 */
     margin: 0 auto;
-    font-size: 2.2rem !important; /* 描述文字放大一倍 */
+    font-size: 1.8rem !important; /* 描述文字放大一倍 */
     color: #000; /* 描述文字黑色 */
     line-height: 8; /* 行高适配 */
   }
