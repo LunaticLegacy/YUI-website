@@ -16,7 +16,7 @@ title: YUI动漫社
   z-index: 1 !important;
 ">
   <div style="position: relative; z-index: 2; width: 100%; height: 100%;">
-    <!-- 角色图容器（保持上移30%的位置） -->
+    <!-- 角色图容器（上移至30%位置） -->
     <div class="character-display" style="
       position: absolute !important;
       top: 30% !important;
@@ -25,11 +25,11 @@ title: YUI动漫社
       transform-origin: center center !important;
       z-index: 10 !important;
     ">
-      <!-- 角色图添加强制动画样式 -->
+      <!-- 角色图（绑定复合动画） -->
       <img id="central-character" 
            src="https://pic.nwafu.xyz/images/639785b2839929c519e8fbfd0ad1554ac4242cc107d8b4876f3006f73ee15ace/1761301412621-jm7lkk17-img_mh4pdvqj_qbv741.png" 
            alt="社团形象角色" 
-           style="width: auto; height: auto; animation: floatBounce 4s ease-in-out infinite !important;">
+           style="width: auto; height: auto;">
     </div>
     <!-- 下方三张图片 -->
     <div class="image-showcase" style="
@@ -58,38 +58,43 @@ title: YUI动漫社
     </div>
   </div>
 </div>
-<!-- 合并浮动+跃动的动画样式（核心修正） -->
+
+<!-- 角色图动画样式 -->
 <style>
-  /* 强制角色图动画生效，使用新动画名称避免冲突 */
+  /* 复合动画：浮动+跃动 */
   #central-character {
     animation: floatBounce 4s ease-in-out infinite !important;
     animation-play-state: running !important;
-    will-change: transform;
-    transform-origin: center center !important; /* 改为中心支点，兼顾浮动和跃动 */
+    will-change: transform; /* 优化动画性能 */
+    transform-origin: center center !important;
   }
-  /* 融合浮动（左右+上下）和跃动（弹跳）的复合动画 */
+
+  /* 动画关键帧：融合左右浮动和上下跃动 */
   @keyframes floatBounce {
     0% { 
-      transform: translateY(0px) translateX(0px) scale(1, 1) rotate(0deg) !important; 
+      transform: translateY(0px) translateX(0px) rotate(0deg) !important; 
     }
     25% { 
-      transform: translateY(-20px) translateX(8px) scale(1.05, 0.95) rotate(1deg) !important; /* 右上跳跃 */
+      transform: translateY(-20px) translateX(8px) rotate(1deg) !important; /* 右上浮动 */
     }
     50% { 
-      transform: translateY(-30px) translateX(0px) scale(1.1, 0.9) rotate(0deg) !important; /* 上方最高点 */
+      transform: translateY(-30px) translateX(0px) rotate(0deg) !important; /* 上方最高点 */
     }
     75% { 
-      transform: translateY(-20px) translateX(-8px) scale(1.05, 0.95) rotate(-1deg) !important; /* 左上回落 */
+      transform: translateY(-20px) translateX(-8px) rotate(-1deg) !important; /* 左上浮动 */
     }
     100% { 
-      transform: translateY(0px) translateX(0px) scale(1, 1) rotate(0deg) !important; /* 回到原点 */
+      transform: translateY(0px) translateX(0px) rotate(0deg) !important; /* 回到原点 */
     }
   }
-  /* 悬停效果修正 */
+
+  /* 悬停效果：暂停动画+轻微放大 */
   #central-character:hover {
     animation-play-state: paused !important;
-    transform: scale(1.1) !important; /* 悬停时放大 */
+    transform: scale(1.1) !important;
   }
+
+  /* 下方图片悬停效果 */
   .image-card:hover {
     transform: translateY(-5px) !important;
   }
