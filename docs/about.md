@@ -3,10 +3,17 @@ title: 社团介绍 | YUI动漫社
 ---
 
 <style>
+  /* 全局背景改为白色 */
+  body {
+    background-color: white !important;
+  }
+
   .about-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem 5%;
+    /* 容器内背景确保为白色 */
+    background-color: white;
   }
 
   .section {
@@ -15,7 +22,7 @@ title: 社团介绍 | YUI动漫社
 
   .section-title {
     font-size: 2rem;
-    color: #333;
+    color: #000; /* 标题改为黑色 */
     margin-bottom: 2rem;
     padding-bottom: 0.5rem;
     border-bottom: 3px solid #ff6b6b;
@@ -38,7 +45,7 @@ title: 社团介绍 | YUI动漫社
     font-size: 1.1rem;
     line-height: 1.8;
     margin-bottom: 1.5rem;
-    color: #666;
+    color: #000; /* 正文改为黑色 */
   }
 
   .about-img {
@@ -79,13 +86,13 @@ title: 社团介绍 | YUI动漫社
   }
 
   .activity-card h3 {
-    color: #333;
+    color: #000; /* 活动标题改为黑色 */
     margin-bottom: 1rem;
     font-size: 1.3rem;
   }
 
   .activity-card p {
-    color: #666;
+    color: #333; /* 活动内容用深灰黑色，避免纯黑刺眼 */
     line-height: 1.6;
   }
 
@@ -117,14 +124,14 @@ title: 社团介绍 | YUI动漫社
     max-width: 800px;
     margin: 0 auto;
     font-size: 1.1rem;
-    color: #666;
+    color: #000; /* 角色描述改为黑色 */
     line-height: 1.8;
   }
 
   /* 联系方式 */
   .contact-info {
-    background: #333;
-    color: white;
+    background: #f5f5f5; /* 浅灰背景突出联系方式区域 */
+    color: #000; /* 联系文字改为黑色 */
     padding: 3rem;
     border-radius: 10px;
     display: flex;
@@ -142,15 +149,16 @@ title: 社团介绍 | YUI动漫社
 
   .contact-item i {
     font-size: 1.8rem;
-    color: #ffd700;
+    color: #ff6b6b; /* 图标用主题色，保持辨识度 */
   }
 
   .contact-item div {
     font-size: 1.1rem;
+    color: #000;
   }
 
   .contact-item .label {
-    color: #aaa;
+    color: #666; /* 标签用深灰，区分主次 */
     font-size: 0.9rem;
   }
 </style>
@@ -179,7 +187,7 @@ title: 社团介绍 | YUI动漫社
       </div>
       <div class="about-text">
         <p>我们的宗旨是"以兴趣为纽带，让热爱不孤单"。无论你是资深二次元爱好者，还是刚接触动漫文化的萌新，都能在社团中找到归属感。</p>
-        <p>社团内设4个特色部门：cosplay部（负责角色扮演与舞台表演）、创作部（绘画/手书/周边设计）、策划部（活动组织与执行）、宣传部（新媒体运营与推广），各部门协同合作，共同推进社团发展。</p>
+        <p>社团内设6个特色组别：cosplay组、美工组、技术组、码字组、应援组、音声组、宅舞组，各部门协同合作，共同推进社团发展。</p>
         <p>我们定期组织技能分享会，邀请有经验的成员或校外嘉宾讲解cos妆造、后期修图、动画鉴赏等内容，帮助成员提升兴趣相关技能。</p>
       </div>
     </div>
@@ -190,20 +198,16 @@ title: 社团介绍 | YUI动漫社
     <h2 class="section-title">特色活动</h2>
     <div class="activities-grid">
       <div class="activity-card">
-        <h3>校园动漫嘉年华</h3>
-        <p>每年11月举办的年度盛会，包含cosplay走秀、动漫歌曲演唱、宅舞表演等环节，是校内二次元爱好者的狂欢节，年均参与人数超300人。</p>
+        <h3>星空音乐会</h3>
+        <p>每年10月举办的年度盛会，包含cosplay走秀、动漫歌曲演唱、宅舞表演等环节，是校内二次元爱好者的狂欢节。</p>
       </div>
       <div class="activity-card">
-        <h3>动画观影会</h3>
-        <p>每月精选1-2部经典或热门动画，在多媒体教室放映，搭配茶歇与剧情讨论，让大家在大屏幕前重温感动，交流观后心得。</p>
+        <h3>番剧评选大会</h3>
+        <p>精选特定时段动漫，展开投票与剧情讨论，与大家重温感动，交流观后心得。</p>
       </div>
       <div class="activity-card">
         <h3>创作大赛</h3>
-        <p>涵盖插画、手书、短篇同人小说等类别，鼓励成员发挥创意，优秀作品将制作成社团周边（明信片、徽章等），并在校园文化节展出。</p>
-      </div>
-      <div class="activity-card">
-        <h3>漫展组团</h3>
-        <p>每逢大型漫展（如萤火虫漫展、CP漫展），组织成员集体前往，统一购票、包车，方便大家交流游玩，体验线下漫展氛围。</p>
+        <p>涵盖插画、手书、短篇同人小说，mmd等类别，鼓励成员发挥创意，优秀作品将制作成社团周边（明信片、徽章等），并在校园文化节展出。</p>
       </div>
     </div>
   </div>
@@ -215,8 +219,9 @@ title: 社团介绍 | YUI动漫社
       <img src="https://pic.nwafu.xyz/images/639785b2839929c519e8fbfd0ad1554ac4242cc107d8b4876f3006f73ee15ace/1761301412621-jm7lkk17-img_mh4pdvqj_qbv741.png" alt="YUI动漫社角色形象">
     </div>
     <div class="character-desc">
-      <p>社团专属角色「YUI」是由创作部成员联合设计的形象，紫色长发搭配星星发饰，象征着梦想与希望；绿色眼瞳代表活力与生命力。</p>
-      <p>「YUI」的设定是一位热爱动漫的少女，性格开朗、乐于助人，经常出现在社团的宣传物料、周边产品中，是连接成员与社团的情感纽带。</p>
+      <p>社团专属角色「YUI,YORU」是由创作部成员联合设计的形象</p>
+      <p>「YUI」的设定是活泼天真的妹妹，性格开朗，色眼瞳代表活力与生命力。</p>
+      <p>「YORU」的设定是温柔沉稳的姐姐，善解人意，紫色长发搭配星星发饰，象征着梦想与希望。</p>
     </div>
   </div>
 
