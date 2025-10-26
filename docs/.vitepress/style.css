@@ -30,7 +30,8 @@ img {
   background: none !important;
   outline: none !important;
 }
-/* 全局样式重置 */
+
+/* 全局样式重置（与上方重复，可保留一份） */
 * {
   margin: 0 !important;
   padding: 0 !important;
@@ -53,4 +54,35 @@ img {
 /* 图片卡片悬停效果 */
 .image-card:hover {
   transform: translateY(-5px) !important;
+}
+
+/* 人物浮动动画（核心新增） */
+.character-display {
+  animation: characterFloat 6s ease-in-out infinite !important;
+  animation-play-state: running !important; /* 强制播放 */
+}
+
+/* 明确动画关键帧，确保无冲突 */
+@keyframes characterFloat {
+  0% {
+    transform: scale(0.5) translateY(0px) rotate(0deg) !important;
+  }
+  25% {
+    transform: scale(0.5) translateY(-8px) rotate(1deg) !important;
+  }
+  50% {
+    transform: scale(0.5) translateY(0px) rotate(0deg) !important;
+  }
+  75% {
+    transform: scale(0.5) translateY(8px) rotate(-1deg) !important;
+  }
+  100% {
+    transform: scale(0.5) translateY(0px) rotate(0deg) !important;
+  }
+}
+
+/* 悬停时暂停动画并轻微放大 */
+.character-display:hover {
+  animation-play-state: paused !important;
+  transform: scale(0.52) !important;
 }
