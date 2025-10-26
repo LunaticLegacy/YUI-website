@@ -16,14 +16,16 @@ title: YUI动漫社
   z-index: 1 !important;
 ">
   <div style="position: relative; z-index: 2; width: 100%; height: 100%;">
-    <!-- 中间人物（保留浮动效果） -->
+    <!-- 人物容器（添加明确类名确保动画选中） -->
     <div class="character-display" style="
-      position: absolute;
-      top: 50% !important;
+      position: absolute !important;
+      top: 45% !important;
       left: 50% !important;
       transform: translate(-50%, -50%) scale(0.6) !important;
       transform-origin: center center !important;
-      z-index: 10;
+      z-index: 10 !important;
+      /* 强制启用动画 */
+      animation: float 6s ease-in-out infinite !important;
     ">
       <img src="https://pic.nwafu.xyz/images/639785b2839929c519e8fbfd0ad1554ac4242cc107d8b4876f3006f73ee15ace/1761301412621-jm7lkk17-img_mh4pdvqj_qbv741.png" 
            alt="社团形象角色" style="width: auto; height: auto;">
@@ -56,35 +58,45 @@ title: YUI动漫社
   </div>
 </div>
 
-<!-- 保留浮动动画，适配中心位置 -->
+<!-- 强制动画生效的关键样式 -->
 <style>
-  .character-display {
+  /* 最高优先级定义动画 */
+  :root body .character-display {
     animation: float 6s ease-in-out infinite !important;
+    animation-play-state: running !important; /* 强制播放动画 */
   }
 
-  /* 浮动动画：上下+左右轻微移动+旋转，模拟自然漂浮 */
+  /* 明确动画关键帧，确保无冲突 */
   @keyframes float {
     0% {
-      transform: translate(-50%, -50%) scale(0.6) translateY(0px) translateX(0px) rotate(0deg);
+      transform: translate(-50%, -50%) scale(0.6) translateY(0px) translateX(0px) rotate(0deg) !important;
     }
     25% {
-      transform: translate(-50%, -50%) scale(0.6) translateY(-10px) translateX(5px) rotate(1deg);
+      transform: translate(-50%, -50%) scale(0.6) translateY(-12px) translateX(6px) rotate(1.5deg) !important;
     }
     50% {
-      transform: translate(-50%, -50%) scale(0.6) translateY(0px) translateX(0px) rotate(0deg);
+      transform: translate(-50%, -50%) scale(0.6) translateY(0px) translateX(0px) rotate(0deg) !important;
     }
     75% {
-      transform: translate(-50%, -50%) scale(0.6) translateY(10px) translateX(-5px) rotate(-1deg);
+      transform: translate(-50%, -50%) scale(0.6) translateY(12px) translateX(-6px) rotate(-1.5deg) !important;
     }
     100% {
-      transform: translate(-50%, -50%) scale(0.6) translateY(0px) translateX(0px) rotate(0deg);
+      transform: translate(-50%, -50%) scale(0.6) translateY(0px) translateX(0px) rotate(0deg) !important;
     }
   }
 
-  /* 悬停时暂停动画并轻微放大，增强交互 */
+  /* 悬停效果不影响动画基础设置 */
   .character-display:hover {
     animation-play-state: paused !important;
     transform: translate(-50%, -50%) scale(0.62) !important;
+  }
+
+  /* 确保没有样式阻止动画 */
+  * {
+    animation: none !important;
+  }
+  .character-display {
+    animation: float 6s ease-in-out infinite !important;
   }
 
   .image-card:hover {
