@@ -74,7 +74,7 @@ title: 社团介绍 | YUI动漫社
 
   .about-img img {
     width: 100%;
-    height: 1.3;
+    height: 2;
     display: block; /* 去除图片底部间隙 */
   }
 
@@ -123,7 +123,7 @@ title: 社团介绍 | YUI动漫社
 
   .character-display img {
     width: 100%;
-    height: 1.3;
+    height: 2;
     border-radius: 8px;
   }
 
