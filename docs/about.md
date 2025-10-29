@@ -7,7 +7,7 @@ title: 社团介绍 | YUI动漫社
   body {
     background-color: white;
     font-size: 1rem; /* 常规基准字号 */
-    line-height: 3; /* 舒适行高 */
+    line-height: 2; /* 舒适行高 */
     color: #333; /* 常规文字颜色 */
     margin: 0;
     padding: 0;
@@ -100,7 +100,7 @@ title: 社团介绍 | YUI动漫社
 
   .activity-card h3 {
     margin: 0 0 0.8rem 0;
-    font-size: 3rem;
+    font-size: 2rem;
     color: #000;
   }
 
@@ -143,7 +143,7 @@ title: 社团介绍 | YUI动漫社
 
   .contact-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
     gap: 1rem;
   }
 
@@ -154,7 +154,7 @@ title: 社团介绍 | YUI动漫社
   }
 
   .contact-item i {
-    font-size: 1.2rem;
+    font-size: 2rem;
     color: #ff66bb;
   }
 
