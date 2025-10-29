@@ -121,7 +121,7 @@ title: 社团介绍 | YUI动漫社
   }
 
   .character-display {
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto 1.5rem;
   }
 
