@@ -34,7 +34,7 @@ title: 活动情报 | YUI动漫社
   /* 活动列表通用样式 */
   .events-list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(600px, 2fr));
     gap: 4rem;
   }
 
@@ -51,7 +51,7 @@ title: 活动情报 | YUI动漫社
   }
 
   .event-img {
-    height: 500px;
+    height: 400px;
     overflow: hidden;
   }
 
@@ -63,7 +63,7 @@ title: 活动情报 | YUI动漫社
   }
 
   .event-card:hover .event-img img {
-    transform: scale(1.3);
+    transform: scale(1.05);
   }
 
   .event-info {
@@ -93,8 +93,8 @@ title: 活动情报 | YUI动漫社
   .event-desc {
     font-size: 2rem !important;
     color: #000 !important; /* 描述文字纯黑色 */
-    line-height: 3;
-    margin-bottom: 2rem;
+    line-height: 4;
+    margin-bottom: 4rem;
   }
 
   .event-tag {
