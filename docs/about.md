@@ -182,7 +182,7 @@ title: 社团介绍 | YUI动漫社
     <h1 class="section-title">YUI动漫社</h1>
     <div class="about-content">
       <div class="about-text">
-        <p>YUI动漫社成立于2015年，是校内专注于二次元文化传播与交流的学生社团。</p>
+        <p>YUI动漫社成立于年，是校内专注于二次元文化传播与交流的学生社团。</p>
         <p>涵盖cosplay、二创制作、美术宅舞等多个领域，是学校最具活力的文化社团之一。</p>
       </div>
       <div class="about-img">
