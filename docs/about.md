@@ -6,8 +6,8 @@ title: 社团介绍 | YUI动漫社
   /* 全局基础样式 - 常规排版 */
   body {
     background-color: white;
-    font-size: 2rem; /* 常规基准字号 */
-    line-height: 2; /* 舒适行高 */
+    font-size: 1rem; /* 常规基准字号 */
+    line-height: 3; /* 舒适行高 */
     color: #333; /* 常规文字颜色 */
     margin: 0;
     padding: 0;
