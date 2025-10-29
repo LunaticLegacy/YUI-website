@@ -12,7 +12,7 @@ title: 社团介绍 | YUI动漫社
 
   /* 页面容器 */
   .about-container {
-    max-width: 1400px; /* 加宽容器适配放大内容 */
+    max-width: 2000px; /* 加宽容器适配放大内容 */
     margin: 0 auto;
     padding: 4rem 5%; /* 内边距放大一倍 */
     background-color: white;
@@ -65,7 +65,7 @@ title: 社团介绍 | YUI动漫社
   }
 
   .about-img img {
-    width: 100%;
+    width: 150%;
     height: auto;
     transition: transform 0.5s;
   }
@@ -182,7 +182,7 @@ title: 社团介绍 | YUI动漫社
     <h1 class="section-title">YUI动漫社</h1>
     <div class="about-content">
       <div class="about-text">
-        <p>YUI动漫社成立于年，是校内专注于二次元文化传播与交流的学生社团。</p>
+        <p>YUI动漫社于2010年改名（前身为西农动漫社），是校内专注于二次元文化传播与交流的学生社团。</p>
         <p>涵盖cosplay、二创制作、美术宅舞等多个领域，是学校最具活力的文化社团之一。</p>
       </div>
       <div class="about-img">
