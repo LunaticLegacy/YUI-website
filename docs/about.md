@@ -103,6 +103,7 @@ title: 社团介绍 | YUI动漫社
   .activity-card h3 {
     margin: 0 0 0.8rem 0;
     font-size: 2rem;
+    line-height: 1.4;
     color: #000;
   }
 
@@ -110,6 +111,7 @@ title: 社团介绍 | YUI动漫社
     margin: 0;
     color: #555;
     font-size: 2rem;
+    line-height:1.4;
   }
 
   /* 社团角色区域 */
@@ -130,7 +132,7 @@ title: 社团介绍 | YUI动漫社
   }
 
   .character-desc {
-    max-width: 700px;
+    max-width: 800px;
     margin: 0 auto;
     text-align: left; /* 描述文字左对齐 */
     font-size: 2rem;
@@ -179,8 +181,8 @@ title: 社团介绍 | YUI动漫社
     <h1 class="section-title">YUI动漫社</h1>
     <div class="about-content">
       <div class="about-text">
-        <p>YUI动漫社于2010年更名（前身为西农动漫社），是校内专注于二次元文化传播与交流的学生社团。社团名称"YUI"源自"Youth Union of Interest"（兴趣青年联盟）的缩写，象征着因共同热爱而凝聚的年轻力量。</p>
-        <p>截至2024年，社团累计成员超500人，年均举办活动30+场，涵盖cosplay、二创制作、美术宅舞等多个领域，是学校最具活力的文化社团之一。</p>
+        <p>YUI动漫社于2010年更名（前身为西农动漫社），是校内专注于二次元文化传播与交流的学生社团。</p>
+        <p>活动涵盖cosplay、二创制作、美术宅舞等多个领域，是学校最具活力的文化社团之一。</p>
       </div>
       <div class="about-img">
         <a href="https://pic.nwafu.xyz/images/639785b2839929c519e8fbfd0ad1554ac4242cc107d8b4876f3006f73ee15ace/1761727884248-9p6j3h0a-img_mhbrakzb_6fc2y6.jpg" target="_blank">
