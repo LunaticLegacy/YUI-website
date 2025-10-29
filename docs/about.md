@@ -136,7 +136,7 @@ title: 社团介绍 | YUI动漫社
     margin: 0 auto;
     text-align: left; /* 描述文字左对齐 */
     font-size: 2rem;
-    line-height:1.8;
+    line-height:2;
   }
 
   /* 联系方式区域 */
