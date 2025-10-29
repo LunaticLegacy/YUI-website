@@ -70,7 +70,7 @@ title: 技术组 | YUI动漫社
   }
 
   .section-title {
-    font-size: 2rem;
+    font-size: 2.4rem;
     color: #3399ff;
     margin: 0 0 3rem 0;
     padding-left: 1rem; /* 内边距让文字远离边框 */
@@ -103,7 +103,7 @@ title: 技术组 | YUI动漫社
   }
 
   .activity-title {
-    font-size: 1.5rem;
+    font-size: 2.4rem;
     color: #3399ff;
     margin: 0 0 1rem 0;
     display: flex;
@@ -113,7 +113,7 @@ title: 技术组 | YUI动漫社
   }
 
   .activity-title i {
-    font-size: 1.8rem;
+    font-size: 2.4rem;
   }
 
   .activity-desc {
@@ -130,7 +130,7 @@ title: 技术组 | YUI动漫社
 
   .showcase-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(350px, 2fr));
     gap: 2rem;
   }
 
@@ -164,7 +164,7 @@ title: 技术组 | YUI动漫社
   }
 
   .showcase-title {
-    font-size: 1.2rem;
+    font-size: 2.4rem;
     margin: 0 0 0.5rem 0;
     color: #333;
     white-space: nowrap; /* 标题不换行 */
@@ -173,9 +173,10 @@ title: 技术组 | YUI动漫社
   }
 
   .showcase-desc {
-    font-size: 0.95rem;
+    font-size: 2rem;
     color: #666;
     margin: 0;
+    line-height:1.4;
     word-break: break-word; /* 长描述自动换行 */
   }
 
