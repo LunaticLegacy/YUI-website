@@ -10,7 +10,7 @@ title: 活动情报 | YUI动漫社
   }
 
   .events-container {
-    max-width: 1800px;
+    max-width: 2000px;
     margin: 0 auto;
     padding: 4rem 5%;
     background-color: white; /* 容器背景确保白色 */
