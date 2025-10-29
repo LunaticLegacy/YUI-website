@@ -351,32 +351,36 @@ title: 社团介绍 | YUI动漫社
   </div>
 
   <!-- 联系方式（第五列展开） -->
-  <div class="section">
-    <h2 class="section-title">加入我们</h2>
-    <div class="contact-info">
-      <div class="contact-item">
-        <i>📱</i>
-        <div>
-          <div class="label">QQ群号</div>
-          <div>183672097（验证消息：动漫社）</div>
-        </div>
+<div class="section">
+  <h2 class="section-title">加入我们</h2>
+  <div class="contact-info">
+    <div class="contact-item">
+      <i>📱</i>
+      <div>
+        <div class="label">QQ群号</div>
+        <div>183672097（验证消息：动漫社）</div>
       </div>
-      <div class="contact-item">
-        <i>📺</i>
-        <div>
-          <div class="label">B站账号</div>
-          <div>YUI动漫社（定期更新活动视频）</div>
-        </div>
+    </div> <!-- 闭合contact-item -->
+    <div class="contact-item">
+      <i>📺</i>
+      <div>
+        <div class="label">B站账号</div>
+        <div>YUI动漫社（定期更新活动视频）</div>
       </div>
-      <div class="contact-item">
-        <i>📍</i>
-        <div>
-          <div class="label">活动地点</div>
-          <div>校内活动中心多功能厅</div>
-        </div>
+    </div> <!-- 闭合contact-item -->
+    <div class="contact-item">
+      <i>📍</i>
+      <div>
+        <div class="label">活动地点</div>
+        <div>校内活动中心多功能厅</div>
       </div>
-      <div class="contact-item">
-        <i>🗓️</i>
-        <div>
-          <div class="label">招新时间</div>
-          <div>每年9月开学季</div>
+    </div> <!-- 闭合contact-item -->
+    <div class="contact-item">
+      <i>🗓️</i>
+      <div>
+        <div class="label">招新时间</div>
+        <div>每年9月开学季</div>
+      </div>
+    </div> <!-- 闭合contact-item -->
+  </div> <!-- 闭合contact-info -->
+</div> <!-- 闭合section -->
