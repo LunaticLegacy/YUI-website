@@ -6,8 +6,8 @@ title: 社团介绍 | YUI动漫社
   /* 全局基础样式 - 常规排版 */
   body {
     background-color: white;
-    font-size: 1rem; /* 常规基准字号 */
-    line-height: 1.6; /* 舒适行高 */
+    font-size: 2rem; /* 常规基准字号 */
+    line-height: 2; /* 舒适行高 */
     color: #333; /* 常规文字颜色 */
     margin: 0;
     padding: 0;
@@ -16,7 +16,7 @@ title: 社团介绍 | YUI动漫社
 
   /* 页面容器 */
   .about-container {
-    max-width: 1000px; /* 适中容器宽度 */
+    max-width: 1600px; /* 适中容器宽度 */
     margin: 0 auto;
     padding: 2rem 5%;
   }
@@ -34,7 +34,7 @@ title: 社团介绍 | YUI动漫社
 
   /* 标题样式 */
   .section-title {
-    font-size: 1.8rem; /* 常规标题大小 */
+    font-size: 2.4rem; /* 常规标题大小 */
     color: #000;
     margin: 0 0 1.5rem 0; /* 标题下方间距 */
     padding-bottom: 0.5rem;
@@ -58,18 +58,18 @@ title: 社团介绍 | YUI动漫社
   }
 
   .about-text p {
-    font-size: 1rem;
-    margin-bottom: 1rem; /* 段落间距 */
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem; /* 段落间距 */
     text-align: left; /* 常规左对齐 */
   }
 
   /* 图片区域 */
   .about-img {
     flex: 1;
-    min-width: 300px;
-    border-radius: 8px; /* 适中圆角 */
+    min-width: 600px;
+    border-radius: 10px; /* 适中圆角 */
     overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* 轻微阴影 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 轻微阴影 */
   }
 
   .about-img img {
