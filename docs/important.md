@@ -10,7 +10,7 @@ title: 活动情报 | YUI动漫社
   }
 
   .events-container {
-    max-width: 1400px;
+    max-width: 1800px;
     margin: 0 auto;
     padding: 4rem 5%;
     background-color: white; /* 容器背景确保白色 */
@@ -51,7 +51,7 @@ title: 活动情报 | YUI动漫社
   }
 
   .event-img {
-    height: 300px;
+    height: 500px;
     overflow: hidden;
   }
 
@@ -63,7 +63,7 @@ title: 活动情报 | YUI动漫社
   }
 
   .event-card:hover .event-img img {
-    transform: scale(1.05);
+    transform: scale(1.3);
   }
 
   .event-info {
@@ -76,10 +76,10 @@ title: 活动情报 | YUI动漫社
     color: white; /* 日期标签文字白色（对比色） */
     padding: 0.5rem 1.5rem;
     border-radius: 30px;
-    font-size: 1.8rem !important;
+    font-size: 2rem !important;
     margin-bottom: 2rem;
     font-weight: bold;
-    line-height:1.8;
+    line-height:2;
   }
 
   /* 活动标题与描述 - 强制黑色 */
