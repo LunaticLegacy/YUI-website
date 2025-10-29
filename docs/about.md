@@ -58,10 +58,10 @@ title: 社团介绍 | YUI动漫社
   /* 图片区域 */
   .about-img {
     flex: 1;
-    min-width: 800px; /* 图片容器最小宽度放大 */
+    min-width: 600px; /* 图片容器最小宽度放大 */
     border-radius: 20px; /* 圆角放大一倍 */
     overflow: hidden;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1); /* 阴影范围放大 */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* 阴影范围放大 */
   }
 
   .about-img img {
@@ -74,6 +74,10 @@ title: 社团介绍 | YUI动漫社
     transform: scale(1.05); /* 图片悬停放大效果 */
   }
 
+.about-img a {
+    display: block; /* 使链接覆盖整个图片容器 */
+    text-decoration: none; /* 去除下划线 */
+  }
   /* 特色活动网格 */
   .activities-grid {
     display: grid;
@@ -186,6 +190,7 @@ title: 社团介绍 | YUI动漫社
         <p>涵盖cosplay、二创制作、美术宅舞等多个领域，是学校最具活力的文化社团之一。</p>
       </div>
       <div class="about-img">
+      <a href="https://pic.nwafu.xyz/images/639785b2839929c519e8fbfd0ad1554ac4242cc107d8b4876f3006f73ee15ace/1761727884248-9p6j3h0a-img_mhbrakzb_6fc2y6.jpg" target="_blank">
         <img src="https://pic.nwafu.xyz/images/639785b2839929c519e8fbfd0ad1554ac4242cc107d8b4876f3006f73ee15ace/1761727884248-9p6j3h0a-img_mhbrakzb_6fc2y6.jpg" alt="YUI动漫社集体照">
       </div>
     </div>
@@ -196,7 +201,9 @@ title: 社团介绍 | YUI动漫社
     <h2 class="section-title">关于我们</h2>
     <div class="about-content">
       <div class="about-img">
+      <a href="https://pic.nwafu.xyz/images/639785b2839929c519e8fbfd0ad1554ac4242cc107d8b4876f3006f73ee15ace/1761728171992-cei5mdwl-img_mhbrgrj1_d8f7od.jpg" target="_blank">
         <img src="https://pic.nwafu.xyz/images/639785b2839929c519e8fbfd0ad1554ac4242cc107d8b4876f3006f73ee15ace/1761728171992-cei5mdwl-img_mhbrgrj1_d8f7od.jpg" alt="社团活动场景">
+        <a href="https://pic.nwafu.xyz/images/639785b2839929c519e8fbfd0ad1554ac4242cc107d8b4876f3006f73ee15ace/1761728217168-7wst4752-img_mhbrhqzj_m2ukvm.jpg" target="_blank">
         <img src="https://pic.nwafu.xyz/images/639785b2839929c519e8fbfd0ad1554ac4242cc107d8b4876f3006f73ee15ace/1761728217168-7wst4752-img_mhbrhqzj_m2ukvm.jpg" alt="社团活动场景">
       </div>
       <div class="about-text">
