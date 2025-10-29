@@ -84,6 +84,7 @@ title: 技术组 | YUI动漫社
     max-width: 900px; /* 限制段落最大宽度，提升可读性 */
     margin-bottom: 1.5rem; /* 段落间距 */
     font-size: 2rem;
+    line-height: 2;
     padding: 0 0.5rem; /* 轻微内边距，避免文字贴容器边缘 */
   }
 
