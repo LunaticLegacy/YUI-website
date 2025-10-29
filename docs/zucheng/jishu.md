@@ -29,12 +29,12 @@ title: 技术组 | YUI动漫社
   .group-header {
     text-align: center;
     margin-bottom: 6rem;
-    padding: 0 1rem 2rem; /* 增加左右内边距，约束文字范围 */
+    padding: 0 1rem 3rem; /* 增加左右内边距，约束文字范围 */
     border-bottom: 2px solid #66ccff;
   }
 
   .group-name {
-    font-size: 3.5rem;
+    font-size: 6rem;
     color: #3399ff;
     margin: 0 0 1.5rem 0;
     position: relative;
