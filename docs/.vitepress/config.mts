@@ -24,13 +24,13 @@ export default defineConfig({
       {
         text: '组成',
         items: [
-          { text: '应援组', link: '/guangbang' },
-          { text: '宅舞组', link: '/wudao' },
-          { text: 'cos组', link: '/cosplay' },
-          { text: '技术组', link: '/jishu' },
-          { text: '码字组', link: '/mazi' },
-          { text: '美工组', link: '/meigong' },
-          { text: '音声组', link: '/cv' }
+          { text: '应援组', link: '/zucheng/guangbang' },
+          { text: '宅舞组', link: '/zucheng/wudao' },
+          { text: 'cos组', link: '/zucheng/cosplay' },
+          { text: '技术组', link: '/zucheng/jishu' },
+          { text: '码字组', link: '/zucheng/mazi' },
+          { text: '美工组', link: '/zucheng/meigong' },
+          { text: '音声组', link: '/zucheng/cv' }
         ]
       },
       
@@ -38,15 +38,15 @@ export default defineConfig({
       {
         text: '英灵殿',
         items: [
-          { text: '社长', link: '/leader' },
-          { text: '摄影', link: '/paint' },
-          { text: '应援', link: '/guangbang' },
-          { text: '宅舞', link: '/wudao' },
-          { text: 'cos', link: '/cos' },
-          { text: '技术', link: '/jishu' },
-          { text: '码字', link: '/mazi' },
-          { text: '美工', link: '/meigong' },
-          { text: '音声', link: '/cv' }
+          { text: '社长', link: '/yinglingdian/leader' },
+          { text: '摄影', link: '/yinglingdian/photo' },
+          { text: '应援', link: '/yinglingdian/yinyuan' },
+          { text: '宅舞', link: '/yinglingdian/zhaiwu' },
+          { text: 'cos', link: '/yinglingdian/cos' },
+          { text: '技术', link: '/yinglingdian/technology' },
+          { text: '码字', link: '/yinglingdian/mazimoyu' },
+          { text: '美工', link: '/yinglingdian/meigonghuihua' },
+          { text: '音声', link: '/yinglingdian/yisheng' }
         ]
       },
       

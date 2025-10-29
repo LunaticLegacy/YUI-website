@@ -186,7 +186,7 @@ title: 社团介绍 | YUI动漫社
         <p>涵盖cosplay、二创制作、美术宅舞等多个领域，是学校最具活力的文化社团之一。</p>
       </div>
       <div class="about-img">
-        <img src="https://pic.nwafu.xyz/images/639785b2839929c519e8fbfd0ad1554ac4242cc107d8b4876f3006f73ee15ace/1761408344580-6smzvroq-img_mh6hls4d_o4ogf8.png" alt="YUI动漫社集体照">
+        <img src="https://pic.nwafu.xyz/images/639785b2839929c519e8fbfd0ad1554ac4242cc107d8b4876f3006f73ee15ace/1761727884248-9p6j3h0a-img_mhbrakzb_6fc2y6.jpg" alt="YUI动漫社集体照">
       </div>
     </div>
   </div>
@@ -196,7 +196,8 @@ title: 社团介绍 | YUI动漫社
     <h2 class="section-title">关于我们</h2>
     <div class="about-content">
       <div class="about-img">
-        <img src="https://pic.nwafu.xyz/images/639785b2839929c519e8fbfd0ad1554ac4242cc107d8b4876f3006f73ee15ace/1761301445019-a5861106-img_mh4pelfn_kj5f5d.jpg" alt="社团活动场景">
+        <img src="https://pic.nwafu.xyz/images/639785b2839929c519e8fbfd0ad1554ac4242cc107d8b4876f3006f73ee15ace/1761728171992-cei5mdwl-img_mhbrgrj1_d8f7od.jpg" alt="社团活动场景">
+        <img src="https://pic.nwafu.xyz/images/639785b2839929c519e8fbfd0ad1554ac4242cc107d8b4876f3006f73ee15ace/1761728217168-7wst4752-img_mhbrhqzj_m2ukvm.jpg" alt="社团活动场景">
       </div>
       <div class="about-text">
         <p>我们的宗旨是"以兴趣为纽带，让热爱不孤单"。无论你是资深二次元爱好者，还是刚接触动漫文化的萌新，都能在社团中找到归属感。</p>
