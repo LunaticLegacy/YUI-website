@@ -54,7 +54,7 @@ title: 技术组 | YUI动漫社
   }
 
   .group-motto {
-    font-size: 1.3rem;
+    font-size: 2rem;
     color: #666;
     font-style: italic;
     margin: 2rem 0 0 0;
@@ -70,7 +70,7 @@ title: 技术组 | YUI动漫社
   }
 
   .section-title {
-    font-size: 2.4rem;
+    font-size: 3rem;
     color: #3399ff;
     margin: 0 0 3rem 0;
     padding-left: 1rem; /* 内边距让文字远离边框 */
@@ -83,6 +83,7 @@ title: 技术组 | YUI动漫社
   .section p {
     max-width: 900px; /* 限制段落最大宽度，提升可读性 */
     margin-bottom: 1.5rem; /* 段落间距 */
+    font-size: 2rem;
     padding: 0 0.5rem; /* 轻微内边距，避免文字贴容器边缘 */
   }
 
@@ -118,8 +119,9 @@ title: 技术组 | YUI动漫社
 
   .activity-desc {
     color: #555;
-    line-height: 1.7;
+    line-height: 2;
     margin: 0;
+    font-size: 2rem;
     word-break: break-word; /* 长单词自动换行，避免溢出 */
   }
 
@@ -176,7 +178,7 @@ title: 技术组 | YUI动漫社
     font-size: 2rem;
     color: #666;
     margin: 0;
-    line-height:1.4;
+    line-height:2;
     word-break: break-word; /* 长描述自动换行 */
   }
 
