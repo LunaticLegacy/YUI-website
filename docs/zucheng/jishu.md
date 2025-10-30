@@ -258,7 +258,7 @@ title: 技术组 | YUI动漫社
         </div>
         <div class="showcase-item">
           <div class="showcase-img">
-            <img src="https://picsum.photos/id/160/600/400" alt="社团官网改版设计">
+            <img src="https://pic.nwafu.xyz/images/639785b2839929c519e8fbfd0ad1554ac4242cc107d8b4876f3006f73ee15ace/1761807445025-r2f2z0ez-img_mhd2nmam_dyncob.png" alt="社团官网改版设计">
           </div>
           <div class="showcase-info">
             <h3 class="showcase-title">社团官网改版设计</h3>
@@ -267,7 +267,7 @@ title: 技术组 | YUI动漫社
         </div>
         <div class="showcase-item">
           <div class="showcase-img">
-            <img src="https://picsum.photos/id/96/600/400" alt="动漫角色3D建模练习">
+            <img src="https://pic.nwafu.xyz/images/639785b2839929c519e8fbfd0ad1554ac4242cc107d8b4876f3006f73ee15ace/1761807508359-otkma1of-img_mhd2p9dx_95yo1e.jpg" alt="动漫角色3D建模练习">
           </div>
           <div class="showcase-info">
             <h3 class="showcase-title">动漫角色3D建模练习</h3>
