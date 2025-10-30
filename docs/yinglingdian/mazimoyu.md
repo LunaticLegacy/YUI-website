@@ -425,5 +425,11 @@ title: 笔韵榜 | 码字组创作册
           <i>✍️</i>
         </div>
       </div>
+      <div class="writer-info">
+        <h3 class="writer-name">虚席以待</h3>
+        <p class="writer-style">期待你的笔锋</p>
+        <p class="writer-slogan">「故事已开篇，等你续写精彩」</p>
+      </div>
+    </div>
    </div>
-       </div>
+   </div>
