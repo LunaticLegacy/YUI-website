@@ -401,7 +401,7 @@ title: 领航者 | 社长传承榜
       <div class="president-info">
         <h3 class="president-name">北铃</h3>
         <p class="president-term">任期：2025-2026</p>
-        <p class="president-slogan">「」</p>
+        <p class="president-slogan">「今年我当社长，星空音乐会也炮了，钱也浪费了，社团也要被除名了，可我依然是最棒的小羊」</p>
       </div>
     </div>
     <!-- 虚席以待1 -->
