@@ -20,7 +20,7 @@ title: 宅舞组 | YUI动漫社
 
   /* 主容器 */
   .dance-group-container {
-    max-width: 1200px;
+    max-width: 2000px;
     margin: 0 auto;
     padding: 4rem 5%;
   }
@@ -154,8 +154,8 @@ title: 宅舞组 | YUI动漫社
   }
 
   .showcase-img {
-    width: 200%;
-    height: 600px;
+    width:100%;
+    height: 400px;
     overflow: hidden;
   }
 
@@ -204,7 +204,7 @@ title: 宅舞组 | YUI动漫社
       grid-template-columns: 1fr;
     }
     .showcase-img {
-      height: 500px;
+      height: 250px;
     }
   }
 </style>
